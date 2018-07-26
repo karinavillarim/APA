@@ -1,2 +1,2 @@
 make: SelectionSort.c
-  gcc SelectionSort.c -o SelectionSort
+    gcc SelectionSort.c -o SelectionSort

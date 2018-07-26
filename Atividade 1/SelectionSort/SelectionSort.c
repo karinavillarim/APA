@@ -22,7 +22,7 @@ void SelectionSort(int *array){
 }
 
 int main(){
-    int array[MAX_ELEMENTOS] = {4,6,2,9,5,1,7,8,3,0};
+    int array[MAX_ELEMENTOS] = {4,6,2,9,5,1,7,8,3,0}; //nesse codigo nao existe nem melhor nem pior caso
     int i = 0;
     
     SelectionSort(array);

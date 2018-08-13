@@ -1,2 +1,2 @@
-make: InsertionSort.c
-    gcc InsertionSort.c -o InsertionSort
+make: MergeSort.c
+    gcc MergeSort.c -o MergeSort

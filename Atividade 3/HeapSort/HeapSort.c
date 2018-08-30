@@ -9,9 +9,21 @@ void swap(int *x, int *y){ //Funcao para trocar dois elementos de posicao usando
     *y = s;
 }
 
+int FilhoEsquerdo(int i){ //equacao do filho da esquerda
+    return (2*i) + 1;
+}
+
+int FilhoDireito(int i){ //equacao do filho da direita
+    return (2*i) + 2;
+}
+
+int Pai(int i){
+    return floor((i - 1)/2);
+}
+
 void MaxHeapify(int A[], int comprimento, int i){ //Faz o Heap Maximo
-    int L = (2*i) + 1; //equacao do filho da esquerda
-    int R = (2*i) + 2; //equacao do filho da direita
+    int L = FilhoEsquerdo(i); 
+    int R = FilhoDireito(i); 
     int maior = i;
     
     //compara qual dos filhos eh maior, o da esquerda ou direita

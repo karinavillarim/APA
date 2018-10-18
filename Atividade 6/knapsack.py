@@ -12,13 +12,13 @@ def load(entrada):
                 obj.append(linha)
 
     n = obj[0][0]
-    m = obj[0][1]
+    m = obj[0][1] #Guarda a capacidade da mochila
 
     for i in range(1,(len(obj))):
-        pesos.append(obj[i][0])
+        pesos.append(obj[i][0]) #Ordena os pesos num vetor
     
     for i in range(1,(len(obj))):
-        valores.append(obj[i][1])
+        valores.append(obj[i][1]) #Ordena os valores num vetor
 
     return n,m,pesos,valores
 
